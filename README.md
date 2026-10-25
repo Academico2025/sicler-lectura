@@ -47,3 +47,25 @@ En la versión 2, la detección analiza la proporción de píxeles de color en l
 **Para actualizar GitHub:** reemplaza todos los archivos, haz *Commit changes*, espera a que finalice la publicación de Pages y **recarga la página**. Si ves todavía la versión anterior, cierra la pestaña y borra los datos del sitio; el Service Worker antiguo puede conservar archivos hasta la siguiente carga.
 
 **Para probar:** imprime una tarjeta en color (blanco y negro no funciona), selecciona «Explorar una tarjeta con mi cámara», permite el acceso, acerca el cuadro de color hasta ocupar una zona considerable de la guía y mantén la posición un segundo. No basta con abrir la aplicación de cámara normal del teléfono; se utiliza la cámara dentro de la web. GitHub Pages suministra HTTPS. Para probar localmente desde un celular con HTTP por la red, el navegador normalmente bloqueará la cámara.
+
+## Versión 3: mariposa con vuelo en perspectiva y detección mejorada
+
+- La mariposa se construye con alas SVG locales en planos que rotan en 3D, cuerpo y antenas; las alas baten y el conjunto describe una trayectoria de vuelo. **No es un GIF**.
+- La experiencia aparece sobre el video al detectar el **recuadro morado** de las tarjetas de las alas. Los recuadros verdes y azules activan sus respectivos mundos.
+- El reconocimiento se basa en el **color**, no identifica individualmente los diez códigos estudiantiles. Hay diez tarjetas repartidas entre tres mundos; los códigos son identificadores impresos.
+- Para reconocerlas todas, imprimir **a color**, no recortar el cuadrado, usar luz abundante sin reflejos y llenar aproximadamente un tercio del encuadre con el bloque de color.
+- Los móviles deben abrir la página HTTPS publicada en GitHub Pages y dar permiso a la cámara. No se reconoce nada usando la aplicación de cámara externa salvo que se agregue un código QR.
+- La figura se superpone visualmente a la cámara y mueve alas/trayectoria, pero todavía **no hay anclaje 3D al plano real ni seguimiento de posición**. Es un efecto 2.5D en perspectiva, no WebXR con rastreo espacial.
+- Si ves la versión vieja, verifica que GitHub Pages desplegó el último commit; cierra la pestaña y vuelve a abrirla, o borra los datos del sitio. Se cambió la versión de caché a `sicler-guardianes-v3-mariposa`.
+
+
+## Versión 4: tres escenarios animados
+
+- Árbol: copa de hojas móviles, tronco y ramas sombreados, crecimiento y partículas.
+- Libro: páginas volumétricas dibujadas, efecto de pasar hojas y destellos.
+- Mariposa: alas independientes articuladas, trayectoria ondulada, giro y variación de tamaño.
+- Representaciones animadas por canvas 2D con simulación de volumen; **no** son modelos 3D WebGL ni seguimiento espacial real del marcador.
+- Sin librerías externas y sin nuevas descargas de recursos para la animación.
+- Sustituya **todos** los archivos del repositorio. La nueva versión del service worker invalida el caché anterior.
+- Abra `https://USUARIO.github.io/REPOSITORIO/` con una pestaña nueva; si se ve la versión anterior, elimine los datos del sitio o vuelva a cargar.
+- Tarjetas verde/azul/morado: el reconocimiento se basa en colores; varias tarjetas comparten mundo. Para reconocer individualmente 10 códigos sería necesario otro marcador o lectura QR, no está implementado aquí.
