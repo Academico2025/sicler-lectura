@@ -38,3 +38,12 @@ La primera visita requiere internet para abrir GitHub Pages. Cuando el navegador
 ## Ajustes
 
 Para cambiar relatos o preguntas edita `app.js`, objeto `worlds`. Para colores, estilos y movimientos edita `style.css`. Para cambiar las tarjetas, edita la constante `ws` en `tarjetas.html`.
+
+
+## Corrección de cámara (versión 2)
+
+En la versión 2, la detección analiza la proporción de píxeles de color en la región central, ignorando en buena medida el dibujo que hay sobre el marcador. Tras reconocer verde, azul o morado, muestra una animación **superpuesta sobre la vista de cámara** y un botón para entrar al reto. No utiliza seguimiento de objetos tridimensionales ni reconoce la identidad del estudiante.
+
+**Para actualizar GitHub:** reemplaza todos los archivos, haz *Commit changes*, espera a que finalice la publicación de Pages y **recarga la página**. Si ves todavía la versión anterior, cierra la pestaña y borra los datos del sitio; el Service Worker antiguo puede conservar archivos hasta la siguiente carga.
+
+**Para probar:** imprime una tarjeta en color (blanco y negro no funciona), selecciona «Explorar una tarjeta con mi cámara», permite el acceso, acerca el cuadro de color hasta ocupar una zona considerable de la guía y mantén la posición un segundo. No basta con abrir la aplicación de cámara normal del teléfono; se utiliza la cámara dentro de la web. GitHub Pages suministra HTTPS. Para probar localmente desde un celular con HTTP por la red, el navegador normalmente bloqueará la cámara.
