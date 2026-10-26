@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "titulo": "EL DUENDE DE LOS CAMINOS",
+    "figura": "Duende del bosque",
+    "mensaje": "Las historias de nuestro territorio guardan pistas para comprender.",
+    "tono": 0,
+    "color": "#ec4965"
+  },
+  {
+    "id": 2,
+    "titulo": "La viuda: la mujer del camino",
+    "figura": "Figura del camino",
+    "mensaje": "Escucha el relato y distingue lo que sucede de lo que se imagina.",
+    "tono": 26,
+    "color": "#ef8c24"
+  },
+  {
+    "id": 3,
+    "titulo": "El jardín de los remedios de la abuela",
+    "figura": "Jardín medicinal",
+    "mensaje": "Cada planta guarda saberes que podemos investigar y compartir.",
+    "tono": 50,
+    "color": "#d6b300"
+  },
+  {
+    "id": 4,
+    "titulo": "Los sabores de la cocina campesina",
+    "figura": "Canasta campesina",
+    "mensaje": "Cada receta cuenta una historia de nuestra comunidad.",
+    "tono": 78,
+    "color": "#93b735"
+  },
+  {
+    "id": 5,
+    "titulo": "La semilla que viajó de mano en mano",
+    "figura": "Semilla viajera",
+    "mensaje": "Una idea crece cuando la compartimos y la comprendemos.",
+    "tono": 111,
+    "color": "#25a76a"
+  },
+  {
+    "id": 6,
+    "titulo": "La receta escrita en la memoria",
+    "figura": "Receta de la memoria",
+    "mensaje": "Preguntar por los recuerdos también es aprender a leer.",
+    "tono": 151,
+    "color": "#14a798"
+  },
+  {
+    "id": 7,
+    "titulo": "El limoncillo junto a la ventana",
+    "figura": "Planta de limoncillo",
+    "mensaje": "Observa los detalles para descubrir significados nuevos.",
+    "tono": 185,
+    "color": "#168cc2"
+  },
+  {
+    "id": 8,
+    "titulo": "Una noche de relatos bajo el techo de zinc",
+    "figura": "Casa bajo la lluvia",
+    "mensaje": "Una historia cambia cuando cada voz aporta su interpretación.",
+    "tono": 213,
+    "color": "#3f67dc"
+  },
+  {
+    "id": 9,
+    "titulo": "El fogón que reunía a la familia",
+    "figura": "Fogón familiar",
+    "mensaje": "Compartir una lectura nos reúne alrededor de nuevas ideas.",
+    "tono": 264,
+    "color": "#8b5bce"
+  },
+  {
+    "id": 10,
+    "titulo": "La libreta de los saberes de San Alfonso",
+    "figura": "Libreta de San Alfonso",
+    "mensaje": "Leer y escribir conservan la memoria de nuestra comunidad.",
+    "tono": 307,
+    "color": "#ce55ac"
+  }
+]
